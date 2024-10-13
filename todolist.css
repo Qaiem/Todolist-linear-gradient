@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    min-height: 100vh; /* Ensures the body height is at least 100vh */
+    overflow: hidden; /* Prevents scrollbars */
+    background: linear-gradient(to bottom, black, white);
+    z-index: -1; /* Places the gradient behind the content */
+}
+
+#wrapper {
+    text-align: center;
+    padding-top: 20px; /* Add some padding for better spacing */
+}
+h1 {
+    margin-top: 0;
+    padding-top: 0;
+    color:  white;
+    -webkit-background-clip: text; /* For Safari 3, Chrome */
+    background-clip: text; /* Standard property */
+    /* color: transparent; Makes the text transparent */
+}
+
+#container {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.605);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    font-size: large;
+    border: 2px solid rgb(15, 129, 129);
+    color: black;
+}
+
+/* For chrome */
+input::-webkit-input-placeholder {
+    color: black;
+}
+
+button {
+    margin: 5px;
+    width: 90px;
+    height: 45px;
+    border-radius: 6px;
+    outline: none;
+    font-size: large;
+    /* border: 2px solid rgb(15, 129, 129); */
+    color: black;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the ul takes the full width of the container */
+}
+
+li {
+    margin-top: 10px; /* Adjust margin-top as needed */
+    margin-bottom: 10px; /* Adjust margin-bottom as needed */
+    padding: 10px; /* Add padding for better spacing inside each item */
+    background-color: transparent; /* Transparent background color */
+    border-radius: 6px; /* Example border radius */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Example box shadow */
+    color: white; /* Text color */
+    font-size: large;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.175), rgba(255, 0, 0, 0.237), rgba(0, 0, 0, 0.385)); /* Same as body background */
+}
+
